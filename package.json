@@ -1,0 +1,25 @@
+{
+  "name": "require-plugins",
+  "version": "1.0.0",
+  "description": "This module loads modules for a \"pluggable\" node project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hobbyquaker/require-plugins"
+  },
+  "keywords": [
+    "require",
+    "plugin",
+    "modules",
+    "pluggable"
+  ],
+  "author": "Sebastian Raff (https://github.com/hobbyquaker)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hobbyquaker/require-plugins/issues"
+  },
+  "homepage": "https://github.com/hobbyquaker/require-plugins"
+}
