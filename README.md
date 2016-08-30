@@ -4,9 +4,7 @@
 [![NPM version](https://badge.fury.io/js/require-plugins.svg)](http://badge.fury.io/js/require-plugins)
 [![Dependency Status](https://img.shields.io/gemnasium/hobbyquakerrequire-plugins.svg?maxAge=2592000)](https://gemnasium.com/github.com/hobbyquaker/require-plugins)
 
-# Purpose
-
-This module loads modules for a "pluggable" node project
+> This module loads modules for a "pluggable" node project
 
 # Usage
 
@@ -24,11 +22,16 @@ project
 require-plugins will then require all plugins starting with ```project-``` and calls their constructor with the arguments
 you supplied.
 
-So ```Javascript
-require('require-plugins')(arg1, arg2, ...);
-``` will resolve to ```Javascript
-require('project-plugin1')(arg1, arg2, ...);
-require('project-plugin2')(arg1, arg2, ...);
+```Javascript
+var plugins = require('require-plugins')(arg1, arg2, ...);
+``` 
+
+The variable plugins will afterwards contain the return values of the individual plugins constructors:
+```Javascript
+{
+  project-plugin1: require('project-plugin1')(arg1, arg2, ...),
+  project-plugin2: require('project-plugin2')(arg1, arg2, ...)
+}
 ```
 
 # License
