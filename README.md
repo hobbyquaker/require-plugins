@@ -34,6 +34,20 @@ The variable plugins will afterwards contain the return values of the individual
 }
 ```
 
+Note: if you don't supply any arguments to the require-plugins constructor plugins are required without calling a constructor.
+
+So 
+```Javascript
+var plugins = require('require-plugins')();
+``` 
+will resolve to
+```Javascript
+{
+  'project-plugin1': require('project-plugin1'),
+  'project-plugin2': require('project-plugin2')
+}
+```
+
 # License
 
 MIT (c) 2016 [Sebastian Raff](https://github.com/hobbyquaker)
