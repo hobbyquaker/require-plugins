@@ -29,8 +29,8 @@ var plugins = require('require-plugins')(arg1, arg2, ...);
 The variable plugins will afterwards contain the return values of the individual plugins constructors:
 ```Javascript
 {
-  project-plugin1: require('project-plugin1')(arg1, arg2, ...),
-  project-plugin2: require('project-plugin2')(arg1, arg2, ...)
+  'project-plugin1': require('project-plugin1')(arg1, arg2, ...),
+  'project-plugin2': require('project-plugin2')(arg1, arg2, ...)
 }
 ```
 
